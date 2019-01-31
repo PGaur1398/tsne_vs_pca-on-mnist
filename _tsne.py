@@ -12,9 +12,9 @@ def tsne():
     labels = leb.head(16000)
     data = d.head(16000)
     standardized_data = StandardScaler().fit_transform(data)
-    data_1000 = standardized_data[0:1000,:]
-    labels_1000 = labels[0:1000]
-    model = TSNE(n_components=2, random_state=0,perplexity = 40,n_iter = 5000)
+    data_15000 = standardized_data[0:15000,:]
+    labels_15000 = labels[0:15000]
+    model = TSNE(n_components=2, random_state=0,perplexity = 40,n_iter = 1000)
     tsne_data = model.fit_transform(data_1000)
     tsne_data = np.vstack((tsne_data.T, labels_1000)).T
     return pd.DataFrame(data=tsne_data, columns=("Dim_1", "Dim_2", "label"))
