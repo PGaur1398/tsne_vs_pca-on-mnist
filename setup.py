@@ -1,15 +1,20 @@
-from setuptools import setup
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-setup (
-name = "tsne_pca",
-version = "0.01",
+import setuptools
+
+setuptools.setup (
+name = "pca_tsne",
+version = "0.1",
 description  = "Comparision between two dimensionality reduction algorithm",
 author = "Pankaj Gaur",
+url = "https://github.com/PGaur1398/tsne_vs_pca-on-mnist.git",
 author_email = "pankajs98@outlook.com",
-py_modules = ["tsne_pca"],
+packages = setuptools.find_packages(),
+include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
+    ],
+    dependency_links=[
+    "git+https://github.com/PGaur1398/tsne_vs_pca-on-mnist.git"
+
     ]
 )

@@ -1,1 +1,3 @@
 __pycache__
+dist
+pca_tsne.egg-info
