@@ -18,6 +18,3 @@ def pca(ds):
     vectors = vectors.T
     new_coordinates = np.vstack((np.matmul(vectors, sample_data.T),labels)).T
     return pd.DataFrame(data=new_coordinates, columns=("Dim_1","Dim_2","label"))
-import pandas as pd
-
-pca(pd.read_csv("mnist.csv"))
