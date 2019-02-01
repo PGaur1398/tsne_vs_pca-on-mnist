@@ -15,3 +15,6 @@ class tsne_pca:
         sn.FacetGrid(tsne(), hue="label", size=6).map(plt.scatter, 'Dim_1', 'Dim_2').add_legend()
         plt.title("T-SNE")
         plt.show()
+if __name__ == "__main__":
+    ob = tsne_pca()
+    ob.plot_pca()

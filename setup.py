@@ -7,7 +7,7 @@ description  = "Comparision between two dimensionality reduction algorithm",
 author = "Pankaj Gaur",
 url = "https://github.com/PGaur1398/tsne_vs_pca-on-mnist.git",
 author_email = "pankajs98@outlook.com",
-packages = setuptools.find_packages(),
+py_modules = setuptools.find_modules(),
 include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
