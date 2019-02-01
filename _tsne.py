@@ -1,4 +1,4 @@
-def tsne():
+def tsne(ds):
 
     import numpy as np
     import pandas as pd
@@ -6,7 +6,6 @@ def tsne():
 
     from sklearn.manifold import TSNE
 
-    ds = pd.read_csv("mnist.csv")
     leb = ds["label"]
     d = ds.drop("label",axis=1)
     labels = leb.head(16000)

@@ -1,4 +1,4 @@
-def pca():
+def pca(ds):
 
     import numpy as np
     import pandas as pd
@@ -6,8 +6,6 @@ def pca():
     import matplotlib.pyplot as plt
     from sklearn.preprocessing import StandardScaler
     from scipy.linalg import eigh
-
-    ds = pd.read_csv("mnist.csv")
     leb = ds["label"]
     d = ds.drop("label",axis=1)
     labels = leb.head(16000)
@@ -20,3 +18,6 @@ def pca():
     vectors = vectors.T
     new_coordinates = np.vstack((np.matmul(vectors, sample_data.T),labels)).T
     return pd.DataFrame(data=new_coordinates, columns=("Dim_1","Dim_2","label"))
+import pandas as pd
+
+pca(pd.read_csv("mnist.csv"))
