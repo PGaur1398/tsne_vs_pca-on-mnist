@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+_pca.py
+_tsne.py
+mnist.csv
+setup.py
+tsne_pca.py
+pca_tsne.egg-info/PKG-INFO
+pca_tsne.egg-info/SOURCES.txt
+pca_tsne.egg-info/dependency_links.txt
+pca_tsne.egg-info/top_level.txt
