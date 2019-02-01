@@ -1,7 +1,7 @@
 # tsne_vs_pca-on-mnist
 PCA and T-SNE are both dimensionality reduction algorithm
 Though T-SNE  gets slower on large data sets but is pretty fast on gpu.checkout the link
-[Optimized Cuda Version](https://github.com/user/CannyLab/tsne-cuda)
+[Optimized Cuda Version](https://github.com/CannyLab/tsne-cuda.git)
 
 
 
